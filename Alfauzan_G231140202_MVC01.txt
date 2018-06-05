@@ -1,0 +1,30 @@
+Nama	:	Alfauzan Rahmana R
+NIM	:	G.231.14.0202
+
+1. Apa sajakah variabel / object yang dibuat ?
+-Class : Hello world
+ String : Massage
+
+-Class : Car.java
+String : Brand, type, engine, transmission, fuel 
+		
+-Class : Vehicle.java
+String : Move
+
+Objek : Helloworld
+
+
+2. Apa sajakah package yang di buat ?
+com.tokobuku.controller berisi file-file controller.
+
+3. Bagaimanakah alur logic programming nya? Manakah model nya? viewnya? dan Controller nya?
+a. web.xml membuat file-file apa saja yang akan dibaca yang konfigurasinya setelah itu pemanggilan sevlet yang terdapat pada file my-spring-sevlet. 
+b. my-spring-sevlet.xml, meng-import package com.tokobuku.controller dan membuat beanberformat .jsp yang merupakan sebuah view.
+c. index.jsp adalah sebuah file view yangakan menjadi halaman awal. File ini akan dibaca oleh my-spring-sevlet.xml dan diteruskan ke file web.xml. 
+d. Hello.html yang terdapat pada index.jsp memanggil halaman baru yang berasal dari controller HelloWorld.java. file tersebut, dibuat class HelloWorld, object ModelAndView dan variabel message lalu melakukan @RequestMapping. kemudian variabel message yang tadi telah dibuat tersebut akan bisa ditampilkan pada file welcome.jsp.
+e. Di file welcome.jsp, merupakan file view yang dikirim oleh controller HelloWorld.java. Variabel message berisi syntax html akan menjadi tampilan html.
+
+
+>> Controller = web.xml, HelloWorld.java
+>> Model = my-spring-sevlet.xml
+>> View = index.jsp, welcome.jsp
